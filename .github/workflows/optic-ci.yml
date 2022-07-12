@@ -5,6 +5,8 @@ on: [pull_request]
 jobs:
   optic-run:
     runs-on: ubuntu-latest
+    env:
+      OPTIC_ENV: staging
     steps:
       - name: Checkout
         uses: actions/checkout@v3
